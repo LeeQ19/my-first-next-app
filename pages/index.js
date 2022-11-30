@@ -17,7 +17,7 @@ export default function Home({ results }) {
           className="movie"
           key={movie.id}
         >
-          <Image src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+          <Image src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
           <h4>
             <Link href={`/movies/${movie.original_title}/${movie.id}`}>
               <span>{movie.original_title}</span>
