@@ -1,12 +1,16 @@
 {
+  "homepage": "https://leeq19.github.io/my-first-next-app",
   "name": "my-first-next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "eslint": "8.28.0",
@@ -14,5 +18,8 @@
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
